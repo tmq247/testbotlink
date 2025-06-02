@@ -25,7 +25,8 @@ SUPPORTED_DOMAINS: List[str] = [
     "phimkk.com",
     "luotphim.org",
     "vuviphim.org",
-    "phimdinhcao.com"
+    "phimdinhcao.com",
+    "tvhay.fm"
 ]
 
 # Request timeout settings
