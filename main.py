@@ -96,9 +96,10 @@ def main():
         
         # Setup routes and start server
         async def init():
-            web_app = await create_app()
-            # Setup cleanup for the web app
-            web_app.on_cleanup.append(cleanup)
+            app.add_subapp('/', web_app)
+            # Mount the web app at the root
+            for route in web_app.router.routes():
+                app.router.add_route(route.method, route.resource.canonical, route._handler)
             return web_app
         
         # Run the application
