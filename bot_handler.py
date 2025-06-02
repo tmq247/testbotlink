@@ -167,7 +167,7 @@ class TelegramBotHandler:
             return
         
         # Send typing action
-        await context.bot.send_chat_action(chat_id=chat_id, action=ChatAction.TYPING)
+        #await context.bot.send_chat_action(chat_id=chat_id, action=ChatAction.TYPING)
         
         # Send processing message
         processing_msg = await update.message.reply_text(
