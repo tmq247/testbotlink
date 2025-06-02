@@ -8,7 +8,7 @@ from link_extractor import VideoLinkExtractor
 
 async def test_video_extraction():
     """Test trích xuất video từ link cụ thể"""
-    test_url = "https://tvhay.fm/xem-phim-quai-thu-dai-nao-so-thu-636340"
+    test_url = "https://phim1080.app/chien-tranh-giua-cac-vi-sao-andor-phan-2/tap-1/"
     
     print(f"🔍 Testing video extraction from: {test_url}")
     print("=" * 50)
