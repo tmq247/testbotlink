@@ -173,7 +173,7 @@ class TelegramBotHandler:
             f"🔍 **{SUCCESS_MESSAGES['processing']}**"
             f"🌐 Đang phân tích: {escape_markdown(extract_domain_from_url(sanitized_url))}"
             f"⏱️ Thời gian ước tính: 10-30 giây"
-            f"🔄 Vui lòng chờ trong giây lát",
+            f"🔄 Vui lòng chờ trong giây lát\\.\\.\\.",
             parse_mode='MarkdownV2'
         )
         
