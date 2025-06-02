@@ -25,7 +25,8 @@ SUPPORTED_DOMAINS = [
     "xemphim.com",
     "fimfast.com",
     "phimhay.org",
-    "tvhay.fm"
+    "tvhay.fm",
+    "phim1080.app"
 ]
 
 VIDEO_EXTENSIONS = [".mp4", ".m3u8", ".mkv", ".avi", ".mov", ".webm"]
