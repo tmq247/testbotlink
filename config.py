@@ -48,9 +48,6 @@ SUPPORTED_DOMAINS: List[str] = [
     "wetv.vip"
 ]
 
-# Sửa regex validation để chấp nhận dấu gạch ngang trong URL
-URL_VALIDATION_REGEX = r'^https?://(?:[-\w.])+(?:\:[0-9]+)?(?:/(?:[\w/_.-])*(?:\?(?:[\w&=%.-])*)?(?:\#(?:[\w.-])*)?)?$'
-
 # Request timeout settings
 REQUEST_TIMEOUT = 30  # seconds
 MAX_PROCESSING_TIME = 45  # seconds for overall processing
@@ -150,8 +147,8 @@ COMMAND_DESCRIPTIONS = {
 
 # Validation settings
 MIN_DOMAIN_LENGTH = 5
+# Sửa regex validation để chấp nhận dấu gạch ngang trong URL
 URL_VALIDATION_REGEX = r'^https?://(?:[-\w.])+(?:\:[0-9]+)?(?:/(?:[\w/_.-])*(?:\?(?:[\w&=%.-])*)?(?:\#(?:[\w.-])*)?)?$'
-
 # Rate limiting settings
 RATE_LIMIT_REQUESTS = 10  # requests per minute per user
 RATE_LIMIT_WINDOW = 60  # seconds
