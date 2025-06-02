@@ -50,10 +50,12 @@ async def start_bot():
         await application.initialize()
         await application.start()
         
-        # Start polling in background
+        # Start polling in background with conflict resolution
         await application.updater.start_polling(
             allowed_updates=["message", "callback_query"],
-            drop_pending_updates=True
+            drop_pending_updates=True,
+            timeout=10,
+            bootstrap_retries=3
         )
         
         logger.info("Bot Telegram đang chạy...")
