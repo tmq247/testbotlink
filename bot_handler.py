@@ -4,7 +4,7 @@ Handles bot commands and URL processing for video link extraction.
 """
 
 import re
-from telegram.utils.helpers import escape_markdown
+from telegram.helpers import escape_markdown
 import logging
 from telegram import Update
 from telegram.ext import ContextTypes, CommandHandler, MessageHandler, filters
