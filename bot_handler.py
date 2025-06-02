@@ -170,9 +170,9 @@ class TelegramBotHandler:
         
         # Send processing message
         processing_msg = await update.message.reply_text(
-            f"🔍 **{SUCCESS_MESSAGES['processing']}**\n\n"
-            f"🌐 Đang phân tích: {escape_markdown(extract_domain_from_url(sanitized_url))}\n"
-            f"⏱️ Thời gian ước tính: 10-30 giây\n"
+            f"🔍 **{SUCCESS_MESSAGES['processing']}**"
+            f"🌐 Đang phân tích: {escape_markdown(extract_domain_from_url(sanitized_url))}"
+            f"⏱️ Thời gian ước tính: 10-30 giây"
             f"🔄 Vui lòng chờ trong giây lát...",
             parse_mode='MarkdownV2'
         )
