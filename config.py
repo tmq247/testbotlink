@@ -26,7 +26,7 @@ SUPPORTED_DOMAINS: List[str] = [
     "luotphim.org",
     "vuviphim.org",
     "phimdinhcao.com",
-    "tvhay.fm"
+    "lauphim.tv"
 ]
 
 # Request timeout settings
