@@ -7,7 +7,7 @@ import os
 from typing import List
 
 # Bot Configuration - Using environment variables for security
-BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "")
+BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "7078453005:AAFDnjrzItKTLAMWqXfphubnF4I8lbW_ahA")
 
 # Validate bot token exists
 if not BOT_TOKEN:
