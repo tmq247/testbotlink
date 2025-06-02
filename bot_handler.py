@@ -172,7 +172,7 @@ class TelegramBotHandler:
         
         # Send processing message
         def escape_text(text):
-            return re.sub(r'([_*[\]()~>#\+\-=|{}.!])', r'\\\1', text)
+            return re.sub(r'([_*[\]()~>#\+\-=|{}.!-])', r'\\\1', text)
 
         processing_msg = await update.message.reply_text(
             f"🔍 **{SUCCESS_MESSAGES['processing']}**\n"
