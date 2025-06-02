@@ -179,7 +179,7 @@ class TelegramBotHandler:
             f"🌐 Đang phân tích: {escape_text(extract_domain_from_url(sanitized_url))}\n"
             f"⏱️ Thời gian ước tính: 10-30 giây\n"
             f"🔄 Vui lòng chờ trong giây lát...",
-            parse_mode='MarkdownV2'
+            parse_mode='HTML' #'MarkdownV2'
         )
         
         # Add user to processing set
